@@ -1,0 +1,25 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  claudia-api-builder:
+    specifier: ^4.1.2
+    version: 4.1.2
+  typescript:
+    specifier: ^5.2.2
+    version: 5.2.2
+
+packages:
+
+  /claudia-api-builder@4.1.2:
+    resolution: {integrity: sha512-xXS9ew32KRJSMQGHMTEsvSkd1FTs9GK3JjiBIuxk9EJz2hubryrWiTzsJQvcVcfBYE0fb7bO+ZhH2/fqqG7Acg==}
+    dev: false
+
+  /typescript@5.2.2:
+    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    dev: false
