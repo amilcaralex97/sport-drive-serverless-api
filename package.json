@@ -2,7 +2,7 @@
   "name": "sport-drive-serverless",
   "version": "1.0.0",
   "description": "",
-  "main": "bin/index",
+  "main": "bin/app",
   "files": [
     "bin/**/*.*",
     "package.json"
