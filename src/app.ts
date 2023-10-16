@@ -1,6 +1,8 @@
 import ApiBuilder from 'claudia-api-builder';
+import { registerUserRoutes } from './api/routes/UserRoutes/UserRoutes';
 
-const api: any = new ApiBuilder();
-api.get('/', () => 'Hello world');
+const api = new ApiBuilder();
+
+registerUserRoutes(api);
 
 export default api;
