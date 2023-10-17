@@ -1,5 +1,5 @@
 import ApiBuilder from 'claudia-api-builder';
-import { registerUserRoutes } from './api/routes/UserRoutes/UserRoutes';
+import { registerUserRoutes } from './api/routes/User/UserRoutes';
 
 const api = new ApiBuilder();
 

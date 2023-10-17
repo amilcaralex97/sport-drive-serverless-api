@@ -1,4 +1,4 @@
-import { UserCase } from "../../../core/use-cases/User/UserCase";
+import { UserActions, UserCase } from "../../../core/use-cases/User/UserCase";
 import { UserRepositoryImpl } from "../../../infrastructure/database/UserRepositoryImpl";
 
 export class UserController {
@@ -10,10 +10,12 @@ export class UserController {
 
     async getUserDetails(id: string): Promise<any> {
         try {
-            const car = await this.getUserById.execute(id);
+            const car = await this.getUserById.execute(UserActions.FindById, id);
             return { statusCode: 200, body: car };
         } catch (error) {
             return { statusCode: 500, body: 'Internal Server Error' };
         }
     }
+
+    async getAll() { }
 }

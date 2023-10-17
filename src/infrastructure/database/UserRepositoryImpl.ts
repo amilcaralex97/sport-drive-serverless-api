@@ -9,4 +9,8 @@ export class UserRepositoryImpl implements UserRepository {
         // For simplicity, returning a mock car.
         return new User(id, 'Alex', 'Sanchez', '3313612735', 'test@test.com');
     }
+
+    async getAll(): Promise<User[]> {
+        return [new User('1', 'Alex', 'Sanchez', '3313612735', 'test@test.com')]
+    }
 }

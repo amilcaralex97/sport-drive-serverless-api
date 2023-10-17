@@ -1,4 +1,4 @@
-import { UserController } from '../../controllers/UserController/UserController'
+import { UserController } from '../../controllers/User/UserController'
 
 const userController = new UserController()
 
